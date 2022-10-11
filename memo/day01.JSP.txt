@@ -1,0 +1,48 @@
+ 
+ https://tomcat.apache.org/
+
+> 왼쪽 download > tomcat 9 > 9.0.67 > 64 -bit wind > 압축해제하면 끝
+
+이클립스 설정
+
+file > new > Dynamic Web project > project name 작성후 next > next > 체크박스 선택 후 finish
+
+
+ 아래 server 탭 > 오른쪽클릭 new > Server  > Apache 스크롤 > 9.0클릭 > Server name ( 바꿔도 상관 x , 강의중엔 day ** 로 사용 > next > Tomcat installation director , browse 아파치 폴더 선택 > next > 왼쪽 day 01 오른쪽으로 옮기기 > finish
+ 
+
+서버 더블클릭 (설정파일뜸)  > 오른쪽 ports > port Number 중 8080을 8081로 수정 후 ENTER > Ctrl + s
+
+window r > cmd > netstat -nao | findstr 8080
+
+
+서버 더블클릭 > 아래쪽에 modules 클릭 > 첫번째줄 클릭> Edit > /day01 을 / 로만 바꿔주기  > 저장
+ 
+
+ 1. 톰캣 설치
+
+ 	 
+ https://tomcat.apache.org/
+
+> 왼쪽 download > tomcat 9 > 9.0.67 > 64 -bit wind > 압축해제하면 끝
+
+
+ 2. 포트 검색 
+
+	window r > cmd > netstat -nao | findstr 8080
+	-> 8080
+
+ 3. 서버 검색
+
+
+ test 프로젝트 생성
+
+ test 이름의 tomcat 세팅 - test 프로젝트와 연결
+
+ port 번호 : 8081
+ 
+ index.html : Hello JSP
+
+ http://localhost:8081/index.html 요청 ( Request)
+ 
+ Hello JSP 페이지 응답 ( Response)

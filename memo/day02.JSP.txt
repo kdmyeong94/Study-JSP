@@ -1,0 +1,144 @@
+
+ 1. web Server
+	- HTTP 요청을 받아 static content ( 정적 컨텐츠 ) 를 제공하는 서버
+	- 동적인 컨텐츠 제공을 위한 요청을 전달
+
+ 2. 웹 컨테이너 ( Web Container )
+	- 웹 서버가 보낸 JSP, PHP 등의 파일을 실행하고 수행 결과를 다시 웹 서버로 보내주는 역할을 한다.
+
+ 3. 서블릿 ( Servlet )
+	- 자바를 사용하여 웹을 만들기 위해 필요한 기술
+	- 클라이언트의 요청을 처리하고, 그 결과를 반환하는 Servlet 클래스의 구현을 지킨 자바 웹 프로그래밍 기술
+
+
+  ( 준비 ) 
+ 이클립스 > 프로젝트 > 자바폴더에 패키지 생성, 클래스 생성
+> 아파치 폴더 > lib > servlet-api.jar 복사 >   (이클립스)  src > webapp > WEB-INF > lib 에 붙여넣기
+
+ 프로젝트 우클릭 > Properties > Java Build Path > Libraries > Classpath > Add JARs 
+> day** > src > main > webapp > WEB-INF > lib > servlet-ali > apply and Close 
+
+ (클래스에서)
+ ( 클래스명) extends HttpServlet 추가
+
+  service ( 컨트롤 엔터, Http 있는것으로 자동완성 ) 
+
+주석 + supe~~ 지우기
+
+ ( 출력 , service 함수 안에 )
+		PrintWriter out = arg1.getWriter();
+		out.println("Hello Servlet!!!!");
+
+-------------------------
+( 서블릿 등록 )
+web.xml  >> 아래쪽 Source <   </welcome-file-list>과  </web-app>사이에 > 
+
+  	<servlet>
+  		<servlet-name> ( 아무 거나 ) </servlet-name>
+  		<servlet-class> ( 패키지명.클래스명 // 풀 경로) </servlet-class>
+  	</servlet>
+  	
+	<servlet-mapping>
+  		<servlet-name>myServlet</servlet-name>
+  		<url-pattern>/hello</url-pattern>
+  	</servlet-mapping>
+  	
+  	<!-- 
+  		url 패턴의 /hello로 요청이 들어오면
+  		servlet의 myServlet으로 요청이 가고,
+  		com.koreait.web.servlet.MyServlet class가 호출
+  	 -->
+
+
+
+
+4. param
+
+	/cnt?cnt=3	"3"
+	/cnt?cnt=		""
+	/cnt?		null
+	/cnt		null
+
+
+ 5. GET방식과 POST 방식 차이
+
+	- GET 방식
+		-> 서블릿 데이터를 전송 할 때 데이터가 URL 뒤에
+		name = value 형태로 전송
+		-> 보안에 취약
+		-> 전송 가능 데이터 최대 255자
+		-> 기본 전송 방식으로 사용이 쉬움
+		-> 웹 브라우저에서 직접 입력하여 전송 가능
+		-> 여러개의 데이터를 전송 할 때 ' & ' 로 구분해야 전송
+
+	- POST 방식
+		-> 서블릿 데이터를 전송 할 때 프로토콜의 데이터의 HEAD 영역에 숨겨진 채 전송
+		-> 보안에 유리
+		-> 전송 가능 데이터 용량 무제한
+		-> 전송시 서블릿에서 또 다시 가져오는 작업이 필요하므로 GET방식보다 처리 속도가 느림
+
+
+ 6. Servlet Filter
+  6-1. 필터란?
+	- 클라이언트로부터 요청이 백엔드로 가기 전에 가로채서 서버로부터의 응답이 클라이언트로 보내지기 전에 조작하기 위해서 사용한다.
+
+	ex)
+package com.koreait.web.servlet.filter;
+
+import java.io.IOException;
+
+import javax.servlet.Filter;
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.ServletRequest;
+import javax.servlet.ServletResponse;
+
+public class CharacterEncodingFilter implements Filter{
+
+	@Override
+	public void doFilter(ServletRequest arg0, ServletResponse arg1, FilterChain arg2)
+			throws IOException, ServletException {
+		
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
