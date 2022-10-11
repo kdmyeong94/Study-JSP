@@ -1,7 +1,6 @@
 package com.koreait.web.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,24 +14,38 @@ public class MyServlet6 extends HttpServlet{
 	@Override
 	protected void service(HttpServletRequest arg0, HttpServletResponse arg1) 
 			throws ServletException, IOException {
-	
-		String x = arg0.getParameter("x");
+		String xStr = arg0.getParameter("x");
+		String yStr = arg0.getParameter("y");
 		
-		String y = arg0.getParameter("y");
+		int x = 0;
+		int y = 0;
 		
-		int rx = 0;
-		
-		int ry = 0;
-		
-		if( x != null && !x.equals("")) {
-			rx = Integer.parseInt(x);
-		}
-		if( y != null && !y.equals("")) {
-			ry = Integer.parseInt(y);
+		if( !xStr.equals("") ) {
+			x = Integer.parseInt(xStr);
 		}
 		
-		PrintWriter out = arg1.getWriter();
-		out.println(x+" + " + y + " = " + (rx+ry));
+		if( !yStr.equals("") ) {
+			y = Integer.parseInt(yStr);
+		}
 		
+		int result = x + y;
+		arg1.getWriter().println("결과는 : " + result);
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -11,11 +11,24 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/hello2")
 public class MyServlet2 extends HttpServlet {
-
+	
 	@Override
 	protected void service(HttpServletRequest arg0, HttpServletResponse arg1) 
 			throws ServletException, IOException {
+		
 		PrintWriter out = arg1.getWriter();
-		out.println("Hello Servlet Annotation!!!");
+		out.println("Hello Servlet Annotation!!!!");
+		
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
