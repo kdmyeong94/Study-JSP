@@ -1,3 +1,9 @@
 INDEX VERSION 1.131
+E:\0803_gb_kdm\JSP\Study-JSP\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3875799677.index
+\day04\src\main\java
+E:\0803_gb_kdm\JSP\Study-JSP\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4117812870.index
+\day04\src\main\java
 E:\0803_gb_kdm\JSP\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3348528694.index
 \day03\src\main\java
+E:\0803_gb_kdm\JSP\Study-JSP\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2173105436.index
+\day04\src\main\java
