@@ -4,5 +4,6 @@
   <temp-directory age="0" key="day02" path="tmp2" recycle="false"/>
   <temp-directory age="0" key="day01" path="tmp0" recycle="false"/>
   <temp-directory age="0" key="test" path="tmp1" recycle="false"/>
+  <temp-directory age="0" key="day05" path="tmp5" recycle="false"/>
   <temp-directory age="0" key="day04" path="tmp4" recycle="false"/>
 </temp-directories>

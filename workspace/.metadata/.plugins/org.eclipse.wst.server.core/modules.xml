@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <modules>
   <module moduleId="org.eclipse.jst.jee.server:day02" serverId="day02"/>
+  <module moduleId="org.eclipse.jst.jee.server:day05" serverId="day05"/>
   <module moduleId="org.eclipse.jst.jee.server:day03" serverId="day03"/>
   <module moduleId="org.eclipse.jst.jee.server:day04" serverId="day04"/>
 </modules>
