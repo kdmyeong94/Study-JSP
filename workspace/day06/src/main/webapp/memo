@@ -1,0 +1,13 @@
+
+
+ 컨트롤러가 JSP파일로 되어있는 MVC 1 
+ 
+  > day06 /  joinview.jsp , join.jsp ,  UserDTO,java , UserDAO.java 
+
+ joinview.jsp = View
+ join.jsp = controller
+ UserDAO.java  = model
+ 
+ MVC 2 
+ 
+ > day06 / joinview2.jsp , JoinServlet.java ,  UserDTO,java , UserDAO.java 
