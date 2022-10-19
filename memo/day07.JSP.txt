@@ -1,0 +1,16 @@
+
+ 1. 자바빈즈 태그
+  
+	MemberBean
+
+	객체생성
+		java -> MemberBean member = new MemberBean();
+		Jsp  -> <jsp:useBean class = "패키지명.MemberBean" id="member"/>
+
+	setter()
+		java -> member.setName("자바학생");
+		jsp  -> <jsp:setProperty name="member" property="name" value="자바학생"/>
+	
+	getter()
+		java -> member.getName();
+		jsp  -> <jsp:getProperty name="member" property="name" />

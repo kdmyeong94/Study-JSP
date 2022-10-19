@@ -5,4 +5,5 @@
   <module moduleId="org.eclipse.jst.jee.server:day06" serverId="day06"/>
   <module moduleId="org.eclipse.jst.jee.server:day03" serverId="day03"/>
   <module moduleId="org.eclipse.jst.jee.server:day04" serverId="day04"/>
+  <module moduleId="org.eclipse.jst.jee.server:day07" serverId="day07"/>
 </modules>
