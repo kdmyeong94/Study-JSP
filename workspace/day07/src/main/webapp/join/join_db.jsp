@@ -8,14 +8,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<jsp:useBean id="user" class="com.koreait.web.beans.UserBean"></jsp:useBean>
+	<jsp:useBean id="user" class="com.koreait.web.beans.UserBean"/>
 	
-<!-- 	*로 처리하면 한번에 해결 가능 -->
+	<!-- 	*로 처리하면 한번에 해결 가능 -->
 <%-- 	<jsp:setProperty property="userid" name="user"/> --%>
 <%-- 	<jsp:setProperty property="userpw" name="user"/> --%>
 <%-- 	<jsp:setProperty property="username" name="user"/> --%>
 
-<!-- 	외부에서 전달된 name 속성과 필드의 이름이 같으면 value 가 자동세팅 -->
+	<!-- 	외부에서 전달된 name 속성과 필드의 이름이 같으면 value 가 자동세팅 -->
  	<jsp:setProperty property="*" name="user"/>
  	
  	<%
@@ -24,18 +24,22 @@
  			//가입 성공
  	%>
  		<script>
- 			alret('회원가입 성공!');
- 			location.href = "loginview.jsp";
+ 			alert('회원가입 성공!');
+ 			location.href = "login_view.jsp";
  		</script>
  		
- 	<%} else {
+ 	<%
+ 		} else {
  		//가입 실패
  	%>
  		<script>
- 			alret('회원가입 실패!');
+ 			alert('회원가입 실패!');
  			location.href = "join_view.jsp";
  		</script>
- 	<%} %>
+ 	<%
+ 	}
+ 	%>
+ 	
 </body>
 <script>
 	// validation check,

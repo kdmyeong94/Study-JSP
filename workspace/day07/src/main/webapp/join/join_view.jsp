@@ -43,6 +43,6 @@
 			<input type="button" value="가입완료" onclick="sendit()">
 		</p>
 	</form>
-<!-- <script src="user.js"></script> -->
+<script src="user.js"></script>
 </body>
 </html>
