@@ -14,7 +14,6 @@
 	<jsp:useBean id="mdao" class="com.koreait.web.dao.MemberDAO"/>
 	<%
 		// db connection
-		
 		//db select >> MemberDAO에 작성
 		ArrayList<MemberBean> result = mdao.selectAll();
 	
@@ -27,8 +26,10 @@
 		<%
 			for(MemberBean member : result){
 		%>
-			<tr><%=member.getName() %></tr>
-			<tr><%=member.getAge() %></tr>
+			<tr>
+				<td><%=member.getName() %></td>
+				<td><%=member.getAge() %></td>  
+			</tr>
 		<%
 			}
 		%>
