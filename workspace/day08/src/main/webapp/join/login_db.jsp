@@ -1,5 +1,5 @@
-<%@page import="com.koreait.web.beans.UserBean"%>
 <%@page import="com.koreait.web.dao.UserDAO"%>
+<%@page import="com.koreait.web.beans.UserBean"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@
 </head>
 <body>
 	<%
-		String userid = request.getParameter("userid");
+	String userid = request.getParameter("userid");
 		String userpw = request.getParameter("userpw");
 		UserDAO user = new UserDAO();
 		UserBean userBean = user.login(userid, userpw);

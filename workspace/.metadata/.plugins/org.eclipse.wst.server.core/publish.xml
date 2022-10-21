@@ -4,6 +4,7 @@
   <server id="day02" path="publish3.dat"/>
   <server id="day01" path="publish0.dat"/>
   <server id="test" path="publish1.dat"/>
+  <server id="day09" path="publish9.dat"/>
   <server id="day08" path="publish8.dat"/>
   <server id="day07" path="publish7.dat"/>
   <server id="day06" path="publish6.dat"/>
