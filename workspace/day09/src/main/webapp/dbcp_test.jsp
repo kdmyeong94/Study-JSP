@@ -23,38 +23,18 @@
 		String sql = "select sysdate from dual";
 		
 		PreparedStatement pstm = conn.prepareStatement(sql);
+		
 		ResultSet rs = pstm.executeQuery();
 		
-		Date date =null;
+		Date date = null;
 		
 		if(rs.next()){
 			date = rs.getDate(1);
 		}
+		
 	%>
 	<%=date %>
+<!-- 	오류가 날 경우 아파치 폴더 > 라이브러리 dbcp.jar 파일 라이브러리 추가 -->
 <%-- 	<%=conn %> --%>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

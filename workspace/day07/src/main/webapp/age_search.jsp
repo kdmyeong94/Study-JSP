@@ -7,11 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="age_db.jsp">  <!-- 액션에  db와 연결된 페이지 연결-->
+<!-- 액션에  db와 연결된 페이지 연결-->
+	<form action="age_db.jsp">  
 		<label>이름 <input type = "text" name="name"> </label>
 		<input type = "submit">
 	</form>
-	<input type="button" value="전체 확인하기" onclick="selectAll();"> <!-- 자바스크립트 연결 -->
+	<!-- 자바스크립트 연결 -->
+	<input type="button" value="전체 확인하기" onclick="selectAll();"> 
 </body>
 
 	<script>

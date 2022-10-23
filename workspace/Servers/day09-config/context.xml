@@ -28,7 +28,7 @@
     -->
     
     <Resource 
-		name="jdbc/oracle"
+    	name="jdbc/oracle" 
 		auth="Container"
     	type="javax.sql.DataSource"
     	driverClassName="oracle.jdbc.driver.OracleDriver"

@@ -5,6 +5,12 @@
 <head>
 <meta charset="UTF-8">
 <title>join_view</title>
+<style>
+	#text{
+		color : red;
+		font-weight : bold;
+		}
+</style>
 </head>
 <body>
 	<form name="joinForm" method="post" action="join_db.jsp">

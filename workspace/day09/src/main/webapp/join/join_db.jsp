@@ -1,4 +1,4 @@
-<%@page import="com.koreait.web.dao.UserDAO2"%>
+<%@page import="com.koreait.web.dao.UserDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -19,10 +19,9 @@
  	<jsp:setProperty property="*" name="user"/>
  	
  	<%
-
- 	 	 	 	UserDAO2 udao = new UserDAO2();
- 	 	 	 	 		if(udao.join(user)){
- 	 	 	 	 			//가입 성공
+ 	 	UserDAO udao = new UserDAO();
+ 	 	 		if(udao.join(user)){
+ 	 	 			//가입 성공
  	 	%>
  		<script>
  			alert('회원가입 성공!');

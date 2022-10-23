@@ -11,7 +11,7 @@ public class DBConnection {
 		Connection conn = null;
 		try {
 			String driver = "oracle.jdbc.driver.OracleDriver";  // 오라클에 접근 할 수있는 경로 ( 라이브러리에 있음) 		
-			String url = "jdbc:oracle:thin:@localhost:1521:xe";   // 디비버에서 적어준 설정파일 적기 만약 다른 PC라면 ip 주소 (localhost), 포트 (1521) , DB (xe) 바꿔주기
+			String url = "jdbc:oracle:thin:@localhost:1521:XE";   // 디비버에서 적어준 설정파일 적기 만약 다른 PC라면 ip 주소 (localhost), 포트 (1521) , DB (xe) 바꿔주기
 			String user = "jsp";   // DB 계정 아이디
 			String password = "jsp"; // DB 계정 패스워드
 		

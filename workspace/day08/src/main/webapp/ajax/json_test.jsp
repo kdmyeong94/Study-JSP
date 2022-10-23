@@ -13,10 +13,10 @@
 	xhr.send();  // 요청을 보내기 >> 윗줄 페이지
 	xhr.onreadystatechange = function(){ // 응답을 받아온 후
 		if( xhr.readyState == XMLHttpRequest.DONE && xhr.status == 200 ){  // 응답의 성공, 실패 여부를 확인하기
-			let obj = JSON.parse( xhr.responseText);
 // 			alert(xhr.responseText);
-			alert(obj.count);
+			let obj = JSON.parse( xhr.responseText);
 			alert(obj.result);
+			alert(obj.count);
 		}
 	}
 	

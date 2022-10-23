@@ -1,4 +1,4 @@
-<%@page import="com.koreait.web.dao.UserDAO2"%>
+<%@page import="com.koreait.web.dao.UserDAO"%>
 <%@page import="com.koreait.web.beans.UserBean"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -10,15 +10,15 @@
 </head>
 <body>
 	<%
-			String userid = request.getParameter("userid");
-			String userpw = request.getParameter("userpw");
-			UserDAO2 user = new UserDAO2();
-			UserBean userBean = user.login(userid, userpw);
-			
-			
-			if ( userBean != null){
-		//로그인성공
-		session.setAttribute("session_id", userBean);
+	String userid = request.getParameter("userid");
+		String userpw = request.getParameter("userpw");
+		UserDAO user = new UserDAO();
+		UserBean userBean = user.login(userid, userpw);
+		
+		
+		if ( userBean != null){
+			//로그인성공
+			session.setAttribute("session_id", userBean);
 	%>
 		<script>
 			location.href = "main_view.jsp"
