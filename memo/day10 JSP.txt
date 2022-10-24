@@ -1,0 +1,58 @@
+ 1. EL
+  1-1. EL문
+	- Exprssion Language
+	- 값을 간결하고 간편하게 출력 할 수 있도록 해주는 언어
+	- <%= %>, out.println() 과 같은 자바코드를 더 이상 사용하지 않고 좀 더 간편하게 출력을 지원하기 위한 도구
+	- 배열, 컬렉션, javaBean 프로퍼티에서도 사용된다.
+	- page > request > session > application
+ 	- 다음과 같은 내장객체를 가짐 >  pagaContext, pageScope, requestScope, sessionScope, applicationScope, param, paramValues
+
+  1-2. EL 표현식
+	- EL구문은 ${...}내에 표현식으로 표현한다.
+
+  1-3. 연산자
+	- 기본연산자
+		.   -> 자바빈 또는 맵에 접근하기 위한 연산자
+		[]  -> 배열 또는 리스트에 접근하기 위한 연산자
+		()  -> 우선순위
+
+	- 산술연산자
+		+, - , *, / ( div ), % ( mod )
+
+	- 비교연산자
+		== ( eq ), != ( ne ), < ( lt ) , > ( gt ) , <= ( le ) , >= ( ge )
+
+ 	- 논리연산자
+		&& ( and ) , || ( or ) , ! ( not ) 
+
+	- 조건 ( 삼항 ) 연산자
+		a ? b : c //  a 조건이 참이면 b , 거짓이면 c 리턴
+
+	- empty 연산자
+		-> 객체의 값이 null 이거나 비어있는지를 판단, null 일경우 true 리턴
+	
+ 2. JSTL
+  2-1. JSTL이란
+	- JSP Standard Tag Library
+	- 연산이나 조건문, 반복문을 편하게 처리 할 수 있으며, JSP 페이지 내에서 자바코드를 사용하지 않고도 로직을 구현 할 수 있도록 효율적인 방법 제시
+	- 라이브러리 파일 제공 페이지
+	- https://archive.apache.org/dist/jakarta/taglibs/standard/binaries/ 
+	- 에서 jakarta-taglibs-standard-1.1.2 파일 다운
+	- 압축풀고 해당프로젝트에 jar파일 추가
+	- JSTL을 사용하기위해 jsp 파일 상단에 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> 추가
+
+  2-2. JSTL 태그
+	- < c:set />
+		: 변수 만들 때 사용
+	- < c:out > </ c:out >
+		: 값을 출력 ( EL문을 더 많이 쓴다. )
+	- < c:if > </ c:if >
+		: 조건제어 ( if 문 )
+	- < c:choose > </ c:choose >
+		: 조건제어 ( switch 문 )
+	- < c:when > </ c:when >
+		: 조건제어 ( case 문 )
+	- < c: otherwise > </ c:otherwise >
+		: 조건제어
+	- < c:forEach > </ c:forEach >
+		: 반복제어 ( for문 )
