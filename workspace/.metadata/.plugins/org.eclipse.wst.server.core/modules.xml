@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <modules>
-  <module moduleId="org.eclipse.jst.jee.server:day02" serverId="day02"/>
-  <module moduleId="org.eclipse.jst.jee.server:day10" serverId="day10"/>
   <module moduleId="org.eclipse.jst.jee.server:day05" serverId="day05"/>
   <module moduleId="org.eclipse.jst.jee.server:day06" serverId="day06"/>
   <module moduleId="org.eclipse.jst.jee.server:day03" serverId="day03"/>
@@ -9,4 +7,10 @@
   <module moduleId="org.eclipse.jst.jee.server:day09" serverId="day09"/>
   <module moduleId="org.eclipse.jst.jee.server:day07" serverId="day07"/>
   <module moduleId="org.eclipse.jst.jee.server:day08" serverId="day08"/>
+  <module moduleId="org.eclipse.jst.jee.server:ums" serverId="ums"/>
+  <module moduleId="org.eclipse.jst.jee.server:umstest" serverId="umstest"/>
+  <module moduleId="org.eclipse.jst.jee.server:day02" serverId="day02"/>
+  <module moduleId="org.eclipse.jst.jee.server:day10" serverId="day10"/>
+  <module moduleId="org.eclipse.jst.jee.server:day11" serverId="day11"/>
+  <module moduleId="org.eclipse.jst.jee.server:dong" serverId="day11"/>
 </modules>
