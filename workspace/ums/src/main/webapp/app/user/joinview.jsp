@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="/user/UserJoin.us">
+	<form action="/user/UserJoin.us" method="post">
 		<p>
 			아이디<input type="text" name="userid">
 		</p>

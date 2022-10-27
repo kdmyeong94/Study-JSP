@@ -25,6 +25,8 @@ public class UserJoinAction implements Action {
 		udto.setUserphone(req.getParameter("userphone"));
 		udto.setUseraddr(req.getParameter("useraddr"));
 		
+		System.out.println(req.getParameter("userid"));
+		
 		if( udao.join(udto) ) { //회원가입이 된 경우, app/user/loginview.jsp 로 이동
 								// redirect
 			

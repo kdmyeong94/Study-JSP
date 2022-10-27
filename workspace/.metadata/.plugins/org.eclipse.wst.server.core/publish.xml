@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <publish-info>
   <server id="test" path="publish1.dat"/>
+  <server id="board_mvc" path="publish15.dat"/>
   <server id="umstest" path="publish14.dat"/>
   <server id="day09" path="publish9.dat"/>
   <server id="day08" path="publish8.dat"/>

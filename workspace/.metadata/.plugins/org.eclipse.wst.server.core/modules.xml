@@ -12,5 +12,6 @@
   <module moduleId="org.eclipse.jst.jee.server:day02" serverId="day02"/>
   <module moduleId="org.eclipse.jst.jee.server:day10" serverId="day10"/>
   <module moduleId="org.eclipse.jst.jee.server:day11" serverId="day11"/>
+  <module moduleId="org.eclipse.jst.jee.server:board_mvc" serverId="board_mvc"/>
   <module moduleId="org.eclipse.jst.jee.server:dong" serverId="day11"/>
 </modules>

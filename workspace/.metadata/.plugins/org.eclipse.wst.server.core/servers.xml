@@ -42,4 +42,7 @@
   <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/ums-config" deployDir="wtpwebapps" hostname="localhost" id="ums" name="ums" runtime-id="day01" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
     <list key="modules" value0="ums::org.eclipse.jst.jee.server:ums::jst.web::4.0"/>
   </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/board_mvc-config" deployDir="wtpwebapps" hostname="localhost" id="board_mvc" name="board_mvc" runtime-id="day01" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="3">
+    <list key="modules" value0="board_mvc::org.eclipse.jst.jee.server:board_mvc::jst.web::4.0"/>
+  </server>
 </servers>

@@ -1,0 +1,40 @@
+
+ 1. 상대경로, 절대경로
+	- D:/0803_gb/kjh/dbms  => 절대경로
+	- ../dbms  	       => 상대경로
+
+	- EL : ${pageContext.request.contextPath} 내 현재 위치
+
+  1-1. 표현식
+	http://localhost:8080/project01/abc.jsp
+
+	${pageContext.request.requestURL}
+	-> http://localhost:8080/project01/abc.jsp
+
+	${pageContext.request.scheme}
+	-> http
+	
+	${pageContext.request.serverName}
+	-> localhost
+
+	${pageContext.request.serverPort}
+	-> 8080
+	
+	${pageContext.request.requestURI}
+	-> /project01/abc.jsp
+
+	${pageContext.request.servletPath}
+	-> /abc.jsp
+
+  1-2. 경로
+	. 	: 현재 웹페이지가 소속된 폴더
+	..	: 현재 웹페이지의 부모 폴더
+
+  	- 실제 주소 : http://localhost:8080/mvcMain/write.do
+	
+	${pageContext.request.contextPath} : /mvcMain
+	<%= request.getContextPath() %>
+
+	- forward : root 경로가 그대로 전달되기 때문에 request.getContexPath()를 적어주면 안된다.
+	- redirect : root 경로도 없어지기 때문에 request.getContextPath()를 적어준다
+

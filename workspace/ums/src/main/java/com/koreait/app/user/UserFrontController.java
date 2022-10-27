@@ -43,6 +43,10 @@ public class UserFrontController extends HttpServlet{
 			System.out.println("frontcontrooler 도착");
 			forward = new UserJoinAction().execute(req, resp);
 			
+		} else if( requestURI.equals("/user/UserLogin.us") ) {
+			forward = new ActionForward(false, "/app/user/loginview.jsp");
+		} else if( requestURI.equals("/user/UserLoginOk.us") ) {
+			forward = new UserLoginOkAction().execute(req, resp);
 		}
 		
 		// 페이지 이동 일괄처리

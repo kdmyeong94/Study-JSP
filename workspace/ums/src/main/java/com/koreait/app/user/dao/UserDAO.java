@@ -1,5 +1,7 @@
 package com.koreait.app.user.dao;
 
+import java.util.HashMap;
+
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
@@ -26,4 +28,18 @@ public class UserDAO {
 			
 			return result;
 		}
+		
+		public boolean login(String userid, String userpw) {
+			HashMap<String, String> datas = new HashMap<>();
+			datas.put("userid", userid);
+			datas.put("userpw", userpw);
+			boolean result = false;
+			
+			if((Integer)sqlsession.selectOne("User.login",datas) == 1) {
+				result = true;
+			}
+
+			return result;
+		}
+		
 }

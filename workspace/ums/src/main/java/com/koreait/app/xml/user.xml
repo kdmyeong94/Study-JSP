@@ -9,5 +9,8 @@
 		INSERT INTO "USER" VALUES (#{userid}, #{userpw}, #{username}, #{userphone}, #{useraddr} )
 	</insert>
 	
+	<select id="login" parameterType="hashmap" resultType="_int">
+		select count(*) from "USER" where userid = #{userid} and userpw = #{userpw}	
+	</select>
 	
 </mapper>
